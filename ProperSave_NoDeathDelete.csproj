@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BepInEx.Analyzers" Version="1.0.8">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="BepInEx.Core" Version="5.4.19" />
+      <PackageReference Include="KingEnderBrine-ProperSave" Version="2.8.7" />
+      <PackageReference Include="UnityEngine.Modules" Version="2019.4.24" />
+    </ItemGroup>
+
+</Project>

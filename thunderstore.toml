@@ -1,0 +1,28 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "Windows10CE"
+name = "ProperSave_NoDeathDelete"
+versionNumber = "1.0.0"
+description = "ProperSave addon to disable the deletion of saves on death"
+websiteUrl = "https://github.com/Windows10CE/ProperSave_NoDeathDelete"
+containsNsfwContent = false
+
+[package.dependencies]
+bbepis-BepInExPack = "5.4.19"
+KingEnderBrine-ProperSave = "2.8.7"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./bin/Release/netstandard2.0/ProperSave_NoDeathDelete.dll"
+target = "ProperSave_NoDeathDelete.dll"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["riskofrain2"]
+categories = ["mods", "tweaks"]
